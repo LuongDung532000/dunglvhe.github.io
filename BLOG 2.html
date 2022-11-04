@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BLOG</title>
+      
+ 
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css2">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Josefin+sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin sans',sans-serif;
+    box-sizing: border-box;
+  }
+  .hero{
+    height:100vh ;
+    width: 100%;
+    background-image: url(https://media.istockphoto.com/photos/closeup-detail-of-basketball-ball-texture-background-3d-render-picture-id1410591424?b=1&k=20&m=1410591424&s=170667a&w=0&h=ZRiBLGSNNdnoMKOeV2DIOZ5X4EoxKtRQday6fwQFd5Y=);
+    background-size: cover;
+    background-position: center;
+
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  .logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+span{
+  color: #f9004d;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: capitalize;
+}
+nav ul li a: hover{
+  color: #f9004d;
+  transition: .4s;
+}
+.btn{
+  background-color:#f9004d ;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform .4s;
+}
+.btn:hover{
+  transform: scale(1.2);
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50px);
+}
+h1{
+  color: white;
+  margin: 20px 0px 20px;
+  font-size: 75px;
+}
+h3{
+  color: #9370DB;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+h4{
+  color: #fcfc;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.newlatter form{
+  width: 380px;
+  max-width: 100%;
+  position: relative;
+}
+
+.about{
+  width: 100%;
+  padding: 100px 0px;
+  background-color: #191919;
+}
+.about img{
+  height: auto;
+  width: 430px;
+}
+.about-text{
+  width: 550px;
+}
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-text h2{
+  color: white;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.about-text h5{
+  color: white;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.about-text p{
+  color: #fcfc;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+button{
+  background-color:#f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: .4s; 
+}
+button:hover{
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
+
+.service{
+  background: #101010;
+  width: 100%;
+  padding: 100px 0px;
+}
+.title h2{
+  color: white;
+  font-size: 75px;
+  width: 1130px;
+  margin: 30px auto;
+  text-align: center;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+.card{
+  height: 365px;
+  width: 335px;
+  padding: 20px 35px;
+  background: #191919;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.card i{
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 25px 0px;
+  color: #f9004d;
+
+}
+h5{
+  color: white;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+.pra p{
+  color: #fcfc;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+.card .button{
+  background-color:#f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+  transition: .4s; 
+}
+.card .button:hover{
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
+.contact-me{
+  width: 100%;
+  height: 290px;
+  background: #191919;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-me p{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.contact-me .button-two{
+  background-color:#f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: .4s; 
+}
+.contact-me .button-two:hover{
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
+footer{
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #101010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer p:nth-child(1){
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+footer p:nth-child(2){
+  color: white;
+  font-size: 17px;
+  width: 500px;
+  text-align: center;
+  line-height: 26px;
+}
+.social{
+  display: flex;
+}
+.social a{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:  #f9004d;
+  border-radius: 50%;
+  margin: 22px 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.social a:hover{
+  transform: scale(1.3);
+  transition: .3s;
+}
+.end{
+  position: absolute;
+  color:#f9004d;
+  bottom: 35px;
+  font-size: 14px; 
+}
+
+</style>
+<script>
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+
+  </head>
+ 
+<body>
+  <div class="hero">
+    <nav>
+      <h2 class="logo">BL<span>OG</span></h2>
+      <ul>
+        <li><a href="BLOG 2.html">Home</a></li>
+        <li><a href="Category.html">Category  </a></li>
+        <li><a href="#">Archive</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <a href="#" class="btn">Subscribe</a>
+
+    </nav>
+    <div class="content">
+      <h4>Interesting things about </h4>
+      <h1>Bask<span>etball</span> </h1>
+      <h3>Celebrities and basketball techniques</h3>
+      <div class="newslatter"></div>
+    </div>
+  </div>
+  <section class="about">
+  <div class="main">
+    <img src="https://images.pexels.com/photos/5756239/pexels-photo-5756239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    <div class="about-text">
+      <h2>My story</h2><br>
+      <h5>A funny story</h5> 
+      <p><span>Talk about a funny story in one of my basketball games. One hot afternoon we played basketball at my high school. We played basketball with an eighty minute round. Beside the basketball court there is a lake, when we finished playing basketball we went down to the pool and all agreed. After swimming for a while, a friend swam to the middle of the lake, and then he pretended to be drowned, struggling and shouting. And people realized he was choking on water. We told each other to help him but no one came out. I told my friend next door to save him but he said he couldn't swim but actually he went to a swimming competition for the school and won the district consolation prize. I said to Thang:<span id="dots">...</span><span id="more"> You are strong and healthy, go out and save him. But he said he's been sick for a few days so he can't come out. I said nothing more, I swam out and saved him, and let him step on me and swim back to shore. When I got ashore, I asked him why he didn't thank me. He asked me "Am I still alive, I thought I was dead then there was no chance to thank you" and he told everyone: "I just swam in the middle of the river and pretended to drown to make fun of everyone. but I couldn't believe my foot was stuck in the rock so I couldn't get to the surface" and he apologized and thanked everyone for their concern and saving him. We laughed a lot then.</span></span></p>
+      <button onclick="myFunction()" id="myBtn" class="btn warning" style="padding: 10px;">Read more</button>  
+    </div>
+  </div> 
+  </section>
+  <div class="service">
+    <div class="title">
+      <h2>Pages</h2>
+    </div>
+    <div class="box">
+      <div class="card">
+        <i class="fas fa-bars"></i>
+        <h5>Basic Rules of Basketball</h5>
+        <div class="pra">
+          <p>Playing time according to the rules of basketball ,Free throw rule,Throw-in....</p>
+          <p style="text-align: center;">
+            <a class="button" href="https://blog.yousport.vn/luat-bong-ro-co-ban/">Read More</a>
+          </p>
+        </div>
+      </div>
+      <div class="box">
+      <div class="card">
+        <i class="fas fa-user"></i>
+        <h5>10 best basketball players</h5>
+        <div class="pra">
+          <p>Basketball is a sport that competes head-to-head between two teams, the following list is the best....</p>
+          <p style="text-align: center;">
+            <a class="button" href="https://toplist.vn/top-list/cau-thu-bong-ro-hay-nhat-the-gioi-13172.htm">Read More</a>
+          </p>
+        </div>
+      </div>
+      <div class="box">
+      <div class="card">
+        <i class="fas fa-bell"></i>
+        <h5>Injury in basketball</h5>
+        <div class="pra">
+          <p>When playing basketball, from head to toe, you can get injured. These include the following common injuries... </p>
+          <p style="text-align: center;">
+            <a class="button" href="https://nhathuoclongchau.com/bai-viet/cac-chan-thuong-khi-choi-bong-ro-ma-ban-khong-the-lam-ngo-57298.html">Read More</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="contact-me">
+    <p>Want to know more about more interesting things subscribe me</p>
+    <a class="button-two" href="#">Subscribe</a>
+  </div>
+  <footer>
+    <p>Luong Dung</p>
+    <p>To know more more thing in life - please go to the link below to subscribe to my channel:</p>
+    <div class="social">
+      <a href="https://www.facebook.com/luong.dung.12914216/"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.behance.net/luongdung3/projects"><i class="fab fa-behance"></i></a>
+      <a href="https://dribbble.com/luongdung532000/about"><i class="fab fa-dribbble"></i></a>
+    </div>
+    <p class="end">CopyRight By Luong Dung</p>
+  </footer>
+</body>
+</html>
